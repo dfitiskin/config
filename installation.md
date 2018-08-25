@@ -9,6 +9,18 @@
 
 ## Настройка
 
+### SSH
+
+[Создания](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/) ключа для авторизации.
+
+Настройка агента для авторизации по ключам `~/.ssh/config`:
+```
+Host *
+ AddKeysToAgent yes
+ UseKeychain yes
+ IdentityFile ~/.ssh/id_rsa
+```
+
 ### Git
 
 Настройка в `~/.gitconfig`:
@@ -45,6 +57,10 @@ node_modules
 .DS-Store
 .vscode/
 ```
+
+### GitHub
+
+[Добавление](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/) ключа в аккаунт.
 
 ### Atom
 
